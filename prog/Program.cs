@@ -1,10 +1,10 @@
 ﻿// Написать программу, которая из имеющегося массива строк формирует массив из строк, длина которых меньше либо равна 3 символа
-string[] array1 = new string[5] {"123", "23", "hello", "world", "res"};
+string[] array1 = new string[5] {":-)", "23", "hello", "world", "B2"};
 string[] array2 = new string[array1.Length];
-void SecondArrayWithIF(string[] array1, string[] array2)
+void SecondArray(string[] array1, string[] array2)
 {
     int count = 0;
-    for (int i = 0; i < array1.Length; i++)
+    for (int i = 0; i < 5; i++)
     {
     if(array1[i].Length <= 3)
         {
@@ -21,5 +21,5 @@ void PrintArray(string[] array)
     }
     Console.WriteLine();
 }
-SecondArrayWithIF(array1, array2);
+SecondArray(array1, array2);
 PrintArray(array2);
